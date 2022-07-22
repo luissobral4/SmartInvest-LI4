@@ -1,0 +1,21 @@
+﻿@model List<Empresa>
+
+<table style="width:100%">
+    <tr>
+        <th>Nome</th>
+        <th>Categoria</th>
+        <th>Website</th>
+        <th>Localização</th>
+        <th>Mercado</th>
+    </tr>
+    @foreach(Empresa e in @Model)
+    {
+        <tr>
+            <td>@e.nome</td>
+            <td>@e.categoria</td>
+            <td>@e.website</td>
+            <td>@e.localizacao</td>
+            <td>@e.mercadoID</td>
+        </tr>
+     }
+</table> 

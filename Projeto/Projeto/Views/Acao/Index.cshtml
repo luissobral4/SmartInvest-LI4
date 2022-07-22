@@ -1,0 +1,21 @@
+﻿@model List<Acao>
+
+<table style="width:100%">
+    <tr>
+        <th>Codigo</th>
+        <th>Hora</th>
+        <th>High</th>
+        <th>Low</th>
+        <th>Average</th>
+    </tr>
+    @foreach (Acao a in @Model)
+    {
+        <tr>
+            <td>@a.acaoID</td>
+            <td>@a.hora</td>
+            <td>@a.high</td>
+            <td>@a.low</td>
+            <td>@a.avg</td>
+        </tr>
+    }
+</table> 

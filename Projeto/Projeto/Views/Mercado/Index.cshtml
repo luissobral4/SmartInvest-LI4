@@ -1,0 +1,17 @@
+﻿@model List<Mercado>
+
+<table style="width:100%">
+    <tr>
+        <th>Codigo</th>
+        <th>Pais</th>
+        <th>Nome</th>
+    </tr>
+    @foreach (Mercado m in @Model)
+    {
+        <tr>
+            <td>@m.mercadoID</td>
+            <td>@m.pais</td>
+            <td>@m.nome</td>
+        </tr>
+    }
+</table> 
